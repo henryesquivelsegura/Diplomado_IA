@@ -2,6 +2,7 @@ from streamlit_mic_recorder import speech_to_text
 from config import llm
 import streamlit as st
 
+
 st.set_page_config(page_title="Asistente de Voz", layout="centered")
 
 st.title("🗣️ Tu asistente de Voz Todo en Uno")
