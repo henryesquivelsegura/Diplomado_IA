@@ -1,18 +1,10 @@
 import streamlit as st
 import joblib
-
 import os
-
-if not os.path.exists("modelo_predictivo.pkl"):
-    st.error("⚠️ No se encontró el archivo modelo_predictivo.pkl")
-
-if not os.path.exists("vectorizador.pkl"):
-    st.error("⚠️ No se encontró el archivo vectorizador.pkl")
-
-
+print (os.path)
 # Cargar modelo y vectorizador
-#model = joblib.load("modelo_predictivo.pkl")
-#vectorizer = joblib.load("vectorizador.pkl")
+model = joblib.load("modelo_predictivo.pkl")
+vectorizer = joblib.load("vectorizador.pkl")
 
 st.title("🧠 Completador de Texto Predictivo (ML)")
 
