@@ -3,7 +3,6 @@ import joblib
 
 # **********************
 import os
-import streamlit as st
 import sys
 
 # Obtener el path absoluto del script actual
@@ -19,8 +18,8 @@ st.code(ruta_script)
 
 
 # Cargar modelo y vectorizador
-#model = joblib.load("modelo_predictivo.pkl")
-#vectorizer = joblib.load("vectorizador.pkl")
+model = joblib.load("texto_predictivo/texto_predictivo_ML/modelo_predictivo.pkl")
+vectorizer = joblib.load("texto_predictivo/texto_predictivo_ML/vectorizador.pkl")
 
 st.title("🧠 Completador de Texto Predictivo (ML)")
 
