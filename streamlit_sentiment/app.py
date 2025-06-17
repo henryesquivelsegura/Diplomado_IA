@@ -43,10 +43,10 @@ st.write("Version: 1.0")
 # production use streamlit_sentiment/model/....
 
 
-vectorizer = joblib.load('/workspaces/Diplomado_IA/streamlit_sentiment/model/tfidf_vectorizer.pkl')
-svm_model = joblib.load('streamlit_sentiment/model/svm_model.pkl')
-nb_model = joblib.load('streamlit_sentiment/model/naive_bayes_model.pkl')
-lr_model = joblib.load('streamlit_sentiment/model/logistic_regression_model.pkl')
+vectorizer = joblib.load('./streamlit_sentiment/model/tfidf_vectorizer.pkl')
+svm_model = joblib.load('./streamlit_sentiment/model/svm_model.pkl')
+nb_model = joblib.load('./streamlit_sentiment/model/naive_bayes_model.pkl')
+lr_model = joblib.load('./streamlit_sentiment/model/logistic_regression_model.pkl')
 
 # App title
 st.title("Tweet Sentiment Analysis App")
