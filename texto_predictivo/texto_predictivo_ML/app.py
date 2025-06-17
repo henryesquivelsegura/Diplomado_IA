@@ -3,8 +3,8 @@ import joblib
 import os
 print (os.path)
 # Cargar modelo y vectorizador
-model = joblib.load("modelo_predictivo.pkl")
-vectorizer = joblib.load("vectorizador.pkl")
+#model = joblib.load("modelo_predictivo.pkl")
+#vectorizer = joblib.load("vectorizador.pkl")
 
 st.title("🧠 Completador de Texto Predictivo (ML)")
 
