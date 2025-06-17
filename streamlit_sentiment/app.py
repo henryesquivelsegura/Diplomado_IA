@@ -5,6 +5,13 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 
+
+# Descargar recursos necesarios si no existen
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
+
 # **********************
 import os
 import sys
