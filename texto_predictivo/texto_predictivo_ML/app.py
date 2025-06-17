@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 import os
-print (os.path)
+st.write_stream(os.path)
 # Cargar modelo y vectorizador
 #model = joblib.load("modelo_predictivo.pkl")
 #vectorizer = joblib.load("vectorizador.pkl")
