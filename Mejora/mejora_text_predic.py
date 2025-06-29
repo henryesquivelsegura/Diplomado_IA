@@ -4,9 +4,6 @@ import os
 
 # ===== CARGAR API KEY =====
 api_key = st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY"))
-if not api_key:
-    st.stop("❌ No se encontró la API key de OpenAI.")
-
 llm = ChatOpenAI(model="gpt-4o", openai_api_key=api_key)
 
 # ===== INTERFAZ =====
