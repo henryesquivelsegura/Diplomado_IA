@@ -5,7 +5,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Asistente de Voz", layout="centered")
 
-st.title("🗣️ Tu asistente de Voz Todo en Uno")
+st.title("🗣️ Tu asistente de Voz Todo en Uno111")
 st.write("Aplicación de chat habilitada por voz (GPT-4o + Micrófono)")
 
 # Capturar voz y convertirla a texto
@@ -21,3 +21,4 @@ if text:
     st.write("🧑 Tú: ", text)
     response = llm.invoke(text)
     st.write("🤖 Respuesta del modelo: ", response.content)
+
